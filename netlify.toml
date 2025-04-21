@@ -1,0 +1,28 @@
+toml[build]
+  publish = "dist" # Adjust this to your build output directory
+  command = "npm run build" # Your build command
+
+[build.environment]
+  NODE_VERSION = "18" # Specify your Node version
+
+# Cache control
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
+
+# Crucial part for cache issues
+[build.processing.cache]
+  build = false # Disables the persistent build cache
