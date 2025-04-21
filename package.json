@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^6.0.2",
-    "@fontsource/merriweather": "^5.2.6",
-    "astro": "^5.6.1"
+    "@fontsource/merriweather": "^5.2.6"
+  },
+  "devDependencies": {
+    "astro": "^5.7.4"
   }
 }
